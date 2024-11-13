@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        .header {
+            background-color: #052c5f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 97%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .submit-button button {
+            background-color: #00208a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-button button:hover {
+            background-color: #0219eb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="header">
+        <h1>DAFTAR HADIR SISWA</h1>
+        <p>MAS AS'AD KOTA JAMBI</p>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="full-name">Nama Lengkap</label>
+            <input type="text" id="full-name" name="full-name">
+        </div>
+        <div class="form-group">
+            <label for="place-birth">Tempat lahir</label>
+            <input type="text" id="place-birth" name="place-birth">
+        </div>
+        <div class="form-group">
+            <label for="birth-date">tanggal lahir</label>
+            <input type="date" id="birth-date" name="birth-date">
+        </div>
+        <div class="form-group">
+            <label for="address">Alamat lengkap</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div class="form-group">
+            <label for="Asal Sekolah">Asal Sekolah</label>
+            <input type="text" id="Asal Sekolah" name="Asal Sekolah">
+        </div>
+        <div class="form-group">
+            <label for="city-country">Kota</label>
+            <input type="text" id="city-country" name="city-country">
+        </div>
+        <div class="form-group">
+            <label for="gender">Jenis kelamin</label>
+            <select id="gender" name="gender">
+                <option value="male">laki-laki</option>
+                <option value="female">perempuan</option>
+                <option value="other">lainnya</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Nomor Handphone</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        <div class="submit-button">
+            <button type="submit">Enter</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
